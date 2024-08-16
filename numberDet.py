@@ -64,10 +64,8 @@ print(y_predicted[1])
 # Compute and visualize the confusion matrix
 cm = tf.math.confusion_matrix(labels=y_test, predictions=y_predicted_labels)
 
-# Convert confusion matrix to numpy array for visualization
 cm = cm.numpy()
 
-# Visualize the confusion matrix
 plt.figure(figsize=(10, 8))
 plt.matshow(cm, cmap='Blues')
 plt.colorbar()
